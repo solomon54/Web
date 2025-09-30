@@ -1,0 +1,8 @@
+{
+  "prettier.proseWrap": "preserve",
+  "prettier.requireConfig": true,
+  "prettier.requirePragma": false,
+  "prettier.resolveGlobalModules": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.enable": false
+}
