@@ -208,41 +208,178 @@ body {
 }
 
 
-/* ##################################################################  SECTION HOW IT WORKS ########## ############################################### */
+/* ##################################################################  FEATURED IN SECTION   ########## ############################################### */
 
-.containor {
+.feature--section {
+
+    background-color: #fdf4ed;
+    padding-bottom: 2.4rem;
+}
+
+.heading--feature {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 1.8rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.2rem;
+}
+
+.logos img {
+    height: 2.4rem;
+    filter: brightness(0);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* 
+##################################################################  SECTION HOW IT WORKS ########## ############################################### */
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #536;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
-    font-size: 2.4rem;
+    justify-content: center;
+    /* text-align: center; */
+    margin-bottom: 4.8rem;
 }
 
 .section--how {
-    background: orange;
+    padding: 8.4rem;
+    background-color: #fff4e6;
+}
+
+
+
+.subheadingg {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e67e22;
+    display: block;
+    margin-bottom: 1.4rem;
+}
+
+.heading--secondary {
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 6.4rem;
+}
+
+
+.heading--tertiary {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    text-align: justify;
+}
+
+.step--description {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+.step--number {
+    display: block;
+    font-size: 9.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.8rem;
+}
+
+.step--img--box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.step--img {
+    width: 50%;
+    align-items: center;
+    z-index: 3;
+}
+
+.step--img--box::before,
+.step--img--box::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.step--img--box::before {
+    padding-bottom: 80%;
+    width: 80%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.step--img--box::after {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #090;
+    z-index: 2;
+}
+
+/* 
+##################################################################  SECTION MEALS ########## ############################################### */
+
+.section--meals {
+    background-color: #fff4e6;
+}
+
+.heading--meals {
+    font-size: 3.2rem;
+    font-weight: 500 !important;
+    text-align: start;
+    padding: 9.6rem 9.6rem 0 9.6rem;
+}
+
+.grid--3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    justify-content: center;
+    /* text-align: center; */
     padding: 9.6rem;
 }
 
-.green {
-    background-color: green;
+.meal--1 {
+    height: 50%;
+    border-radius: 0.8rem;
 }
 
-.yellow {
-    background-color: yellow;
+.tag {}
+
+.meal--tittle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1.2rem auto 2.4rem auto;
+
 }
 
-.red {
-    background-color: red;
+.ingridents {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.8rem;
+    gap: 1.2rem;
+
 }
 
-.black {
-    background: black;
-}
-
-.grid--col-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--col-4 {
-    grid-template-columns: repeat(4, 1fr);
+.meals--title {
+    font-size: 3.2rem;
 }
