@@ -700,14 +700,12 @@ body {
 .section--cta {
     padding: 6.4rem 4.8rem;
     border-radius: 1.2rem;
-    color: #fff;
 }
 
 .cta--box {
     background-image: linear-gradient(-45deg, #adb5bd, #f03e3e, #fcc419);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 50rem;
 
 }
 
@@ -717,4 +715,62 @@ body {
 
 
     background-position: center;
+}
+
+.heading--form {
+    padding: 3.2rem;
+}
+
+.form--box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 6.4rem;
+    padding: 4.8rem;
+    margin-bottom: 4.8rem;
+
+}
+
+.deiscription {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 3.2rem auto;
+}
+
+.form--box label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.form input,
+.form select {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    opacity: 0.8;
+    font-family: inherit;
+    color: inherit;
+    margin-top: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.9rem;
+    outline-style: none;
+
+}
+
+.sign--in {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #ffd43b, #7950f2);
+    border: none;
+    box-shadow: 0 0 2.4rem #fcc31980;
+    margin-left: 50%;
+    transition: all 0.5s;
+    color: inherit;
+}
+
+.sign--in:hover {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #aa97e3, #fcc419);
+    transform: translateY(0.2rem);
 }
