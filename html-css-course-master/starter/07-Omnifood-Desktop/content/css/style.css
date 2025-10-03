@@ -548,3 +548,8 @@ body {
 .gallery figure {
     overflow: hidden;
 }
+
+.section--pricing {
+    padding: 8.4rem 0;
+    background-color: #fff4e6;
+}
