@@ -549,7 +549,98 @@ body {
     overflow: hidden;
 }
 
+
+/* 
+################################################################## PRICING SECTION ########## ############################################### */
 .section--pricing {
-    padding: 8.4rem 0;
-    background-color: #fff4e6;
+    /* background-color:  #fff3bf; */
+    padding: 4.6rem;
+}
+
+.plan--box {
+    position: relative;
+    max-width: 80%;
+    padding: 4.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 1.2rem;
+    background-color: #ffe;
+    overflow: hidden;
+}
+
+.starter--box {
+    margin-right: 0;
+    background-color: #f8f9fa;
+}
+
+.complet--box::after {
+    content: "Best Value";
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    right: 0;
+
+    padding: 0.5rem 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #495057;
+
+    transform: rotate(45deg) translate(30%, -10%);
+}
+
+.plan--box:hover {
+    transform: translateY(-1.2rem);
+    transition: all 0.5s;
+}
+
+.heading--price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.4rem;
+}
+
+.plans {
+    text-align: center;
+    padding-bottom: 2.4rem;
+}
+
+
+.pricing--name {
+    font-size: 3.2rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+}
+
+.price {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.per-meal {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+}
+
+.price span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.plan--details {
+    list-style: none;
+}
+
+.plan--detail {
+    line-height: 1.7;
+    font-size: 1.8rem;
+    margin-left: 3.2rem;
+}
+
+.plan--action {
+    margin: 6.4rem 0;
+    text-align: center;
 }
