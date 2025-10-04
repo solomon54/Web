@@ -501,6 +501,12 @@ body {
     padding: 0 2.4rem 2.4rem 2.4rem;
 }
 
+.testimonials--box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+}
+
 .testimonial {
     margin-top: 3.2rem;
 }
@@ -759,12 +765,13 @@ body {
 }
 
 .sign--in {
+    display: flex;
     font-size: 1.8rem;
     font-weight: 600;
     background-image: linear-gradient(45deg, #ffd43b, #7950f2);
     border: none;
     box-shadow: 0 0 2.4rem #fcc31980;
-    /* margin-left: 50%; */
+    margin-left: 50%;
     transition: all 0.5s;
     color: inherit;
 }
@@ -776,12 +783,9 @@ body {
 }
 
 /* 
-################################################################## FOOTER SECTION ########## ############################################### */
-/* .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 4.8rem 2.4rem;
-} */
+##################################################
+################ FOOTER SECTION ########## ############################################### */
+
 
 .footer {
     border: 0.2rem solid #ddd;
@@ -808,9 +812,10 @@ body {
     gap: 1.6rem;
 }
 
-.footer--logo .logo {
+.logo {
     display: block;
     height: 3.2rem;
+    width: 14rem;
     margin-bottom: 1.6rem;
 }
 
@@ -828,7 +833,8 @@ body {
 .Copyright {
     font-size: 1.4rem;
     color: #999;
-    margin-top: auto;
+    grid-column: 1/-1;
+    /* margin: auto; */
 }
 
 
@@ -847,6 +853,7 @@ body {
     font-size: 1.6rem;
 
 }
+
 
 .contact ion-icon {
     font-size: 1.8rem;

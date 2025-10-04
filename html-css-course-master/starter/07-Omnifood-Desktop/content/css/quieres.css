@@ -1,7 +1,13 @@
 /* at media querie "em" and "rem" don't depend on html font 
 insted; 1 rem = 1 em = 16 px  */
 
-@media (max-width:1250px) {
+
+
+/* ################################################################
+ for the scree size of up to 1250px 
+ ################################################################## */
+/* for the scree size of up to 1250px */
+@media (max-width:79em) {
     html {
         font-size: 9px;
     }
@@ -20,14 +26,201 @@ insted; 1 rem = 1 em = 16 px  */
         font-size: 3.2rem;
     }
 
-    .sign--in {
-        grid-column: -1/-1;
+    .testimonial {
+        margin-left: 2.4rem;
     }
+
+    .sign--in {
+        margin-left: auto;
+    }
+
+    .footer--logo {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+
+    /* 
+    .footer--5-cols {
+        padding: 3.2rem 4.8rem;
+        gap: 2.4rem;
+        font-size: 1.2rem;
+
+
+    } */
+
+    .contact address {
+        font-size: 1.2rem;
+    }
+
+    .footer--nav ul {
+        font-size: 1.2rem;
+    }
+
+
+    .contact a,
+    .contact p {
+        font-size: 1rem;
+
+    }
+}
+
+/* ################################################################
+ for the scree size of up to 900px 
+ ################################################################## */
+
+@media(max-width:59em) {
+
+    /* size of < = 944px */
+    html {
+        font-size: 56.25%;
+        /* 1rem = 9px */
+    }
+
+    .main--nav {
+        font-size: 1.6rem;
+
+    }
+
+    .section--hero {
+        background-color: yellow;
+        padding: 4.8rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+
+    .heading--primary {
+        font-size: 2.4rem;
+    }
+
+    .hero--img {
+        width: 120%;
+    }
+
+    .delivered--imgs img {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    .delivered--text {
+        font-size: 1.2rem;
+    }
+
+    .logos img {
+        height: 1.8rem;
+    }
+
+    /* ############  how it works ############# */
+    .step--number {
+        font-size: 4.8rem;
+    }
+
+    .item--box {
+        padding: 6.4rem 0 3.2rem 2.4rem;
+    }
+
 
     .footer--5-cols {
         padding: 3.2rem 4.8rem;
-        gap: 3.2rem;
+        gap: 2.4rem;
+    }
 
+    .testimonials {
+        grid-template-columns: 1fr;
+
+    }
+
+    .testimonial--text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+
+    .testimonials--box {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        gap: 4.8rem;
+        padding: 3.2rem;
+    }
+
+    /* Galleery */
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.6rem;
+    }
+
+    /* pricing section */
+    .plan--box {
+        padding: 1.2rem;
+        max-width: 100%;
+    }
+
+    .feature--icon {
+        width: 1.8rem;
+    }
+
+    .feature--title {
+        font-size: 1.6rem;
+
+
+    }
+
+    .feature--text {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+
+        height: 2.4rem;
+        width: 10rem;
+
+    }
+
+
+    /* #################### CTA SECTION ########## */
+    .cta--box {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .form--box {
+        grid-template-columns: 1fr;
+        padding: 3.2rem;
+    }
+
+    .form input,
+    .form select {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .heading--form {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        padding: 1.6rem;
+    }
+
+    .cta--img {
+        background-image: linear-gradient(45deg, #2b8a3e78, #f03d3d77),
+            url(../img/eating.jpg);
+    }
+
+    /*  ################ FOOTER SECTION ######## */
+
+
+    .footer--5-cols {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+    }
+
+    .social-icon {
+        font-size: 1.8rem;
+    }
+
+    .contact a,
+    .contact p {
+        font-size: 1.2rem;
 
     }
 }
