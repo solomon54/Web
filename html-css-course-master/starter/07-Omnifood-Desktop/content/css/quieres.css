@@ -1,0 +1,33 @@
+/* at media querie "em" and "rem" don't depend on html font 
+insted; 1 rem = 1 em = 16 px  */
+
+@media (max-width:1250px) {
+    html {
+        font-size: 9px;
+    }
+
+    .section--hero {
+        /* max-width: 100em; */
+        background-color: greenyellow;
+        /* padding: 3.2em; */
+    }
+
+    .hero {
+        gap: 6.4rem;
+    }
+
+    .heading--primary {
+        font-size: 3.2rem;
+    }
+
+    .sign--in {
+        grid-column: -1/-1;
+    }
+
+    .footer--5-cols {
+        padding: 3.2rem 4.8rem;
+        gap: 3.2rem;
+
+
+    }
+}
