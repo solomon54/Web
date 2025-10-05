@@ -127,7 +127,7 @@ body {
 }
 
 .mobile--nav ion-icon[name="menu-outline"] {
-    display: none;
+    display: block;
 }
 
 /* 
@@ -150,9 +150,7 @@ body {
     margin: 0 auto;
 }
 
-.hero-img--box {
-    size: 0px;
-}
+
 
 .hero--img {
     width: 100%;
