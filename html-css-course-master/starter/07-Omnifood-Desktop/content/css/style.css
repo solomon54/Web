@@ -74,6 +74,9 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 /* Navigation */
@@ -83,6 +86,15 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+/* to hide mobile navigation */
+.mob--nav-close {
+    display: none;
+}
+
+.mob--nav-open {
+    display: none;
 }
 
 
@@ -107,28 +119,7 @@ body {
 
 }
 
-/* MOBILE NAVIGATION */
 
-.mobile--nav {
-    font-size: 4.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* both of them can possible to use */
-/* .mob--nav-close {
-    display: none;
-
-} */
-
-.mobile--nav ion-icon[name="close-outline"] {
-    display: none;
-}
-
-.mobile--nav ion-icon[name="menu-outline"] {
-    display: block;
-}
 
 /* 
 ########################################################
@@ -854,10 +845,9 @@ body {
 }
 
 .Copyright {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #999;
-    grid-column: 1/-1;
-    /* margin: auto; */
+    margin: 3.2rem 2.4rem;
 }
 
 

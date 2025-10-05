@@ -2,20 +2,26 @@
 insted; 1 rem = 1 em = 16 px  */
 
 
-
 /* ################################################################
  for the scree size of up to 1250px 
  ################################################################## */
 /* for the scree size of up to 1250px */
 @media (max-width:79em) {
     html {
-        font-size: 9px;
+        font-size: 62.5%;
     }
 
-    .section--hero {
-        /* max-width: 100em; */
+    .mob--nav-close {
+        display: none;
+    }
+
+    .mob--nav-open {
+        display: none;
+    }
+
+    .main--nav .section--hero {
         background-color: greenyellow;
-        /* padding: 3.2em; */
+        transform: translateX(30rem);
     }
 
     .hero {
@@ -23,7 +29,7 @@ insted; 1 rem = 1 em = 16 px  */
     }
 
     .heading--primary {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
     }
 
     .testimonial {
@@ -40,14 +46,7 @@ insted; 1 rem = 1 em = 16 px  */
     }
 
 
-    /* 
-    .footer--5-cols {
-        padding: 3.2rem 4.8rem;
-        gap: 2.4rem;
-        font-size: 1.2rem;
 
-
-    } */
 
     .contact address {
         font-size: 1.2rem;
@@ -83,9 +82,34 @@ insted; 1 rem = 1 em = 16 px  */
         padding: 3.2rem 2.4rem;
     }
 
+    /* MOBILE NAVIGATION */
 
+    .mobile--nav {
+        font-size: 4.8rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* both of them can possible to use */
+    /* .mob--nav-close {
+    display: none;
+
+} */
+
+    .mobile--nav ion-icon[name="close-outline"] {
+        display: none;
+    }
+
+    .mobile--nav ion-icon[name="menu-outline"] {
+        display: none;
+    }
 
     /* MOBILE NAVIGATION */
+    .mobile--nav ion-icon[name="menu-outline"] {
+        display: block;
+    }
+
     .mobile--nav {
         position: absolute;
         top: 2rem;
@@ -98,7 +122,7 @@ insted; 1 rem = 1 em = 16 px  */
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.2rem;
+        /* gap: 1.2rem; */
         /* padding: 9.6rem; */
         margin-top: 8.4rem;
 
@@ -453,5 +477,151 @@ insted; 1 rem = 1 em = 16 px  */
     .contact p,
     .footer--link {
         font-size: 1.6rem;
+    }
+}
+
+/* 
+##################################################
+################ for screen size of 52opx or less ########## ############################################### */
+@media(max-width:33em) {
+
+    /* size of < = 520px */
+    .heading--primary {
+        font-size: 2.4rem;
+    }
+
+    .hero--description {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .logos {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .logos img {
+        height: 0.8rem;
+    }
+
+    .heading--title,
+    .feature--title,
+    .pricing--name,
+    .meals--tittle,
+    .heading--secondary {
+        font-size: 1.8rem;
+    }
+
+
+    .sub--heading,
+    .subheadingg {
+        font-size: 1rem !important;
+    }
+
+    .item--box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials--box,
+    .section--meals .grid--3-cols,
+    .grid {
+        grid-template-columns: 1fr !important;
+        row-gap: 4.8rem;
+        column-span: none;
+
+    }
+
+    .step--img--box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step--img--box {
+        transform: translate(3.2rem, 2.4rem);
+    }
+
+
+    .feature--text,
+    .price--include,
+    .plan--detail,
+    .per-meal,
+    .testimonial--text,
+    .item--heading,
+    .meal--tittle,
+    .heading--tertiary {
+        font-size: 1.2rem;
+    }
+
+    .ingridents,
+    .step--description {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .heading--meals {
+        padding-inline: 1.2rem;
+    }
+
+
+    .meal--img-box {
+        grid-column: none;
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn,
+    .meal--item-box,
+    .meal--box {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .item--box {
+        column-gap: 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pricing--name,
+    .plans {
+        padding: 0;
+    }
+
+    .complet--box::after {
+        font-size: 1.2rem;
+        padding: 0.5rem 2.3rem;
+    }
+
+    .feature--icon {
+        width: 2.4rem;
+        margin-bottom: 0;
+    }
+
+    .form--box {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .deiscription {
+        font-size: 1.2rem;
+        margin: 1.2rem auto;
+    }
+
+    .form--box label,
+    .form input,
+    .form select {
+        font-size: 1.2rem;
     }
 }
