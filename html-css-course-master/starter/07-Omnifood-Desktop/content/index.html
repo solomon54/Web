@@ -21,8 +21,10 @@
 </head>
 
 <body>
-    <header class="header">
-        <img class="logo" src="img/omnifood-logo.png" alt="">
+    <header class="header nav--open">
+        <a href="#"> <img class="logo" src="img/omnifood-logo.png" alt="Omnifood Logo">
+        </a>
+
         <nav class="main--nav">
             <ul class="nav--list">
                 <li> <a class="navigation--link" href="#"> How it works</a> </li>
@@ -32,7 +34,17 @@
                 <li> <a class="navigation--link link--cta" href="#">Try for free</a> </li>
             </ul>
         </nav>
+
+        <button: class="mobile--nav">
+            <ion-icon class="mob--nav-open" name="menu-outline"></ion-icon>
+        </button:>
+        <button: class="mobile--nav">
+            <ion-icon class="mob--nav-close" name="close-outline">
+            </ion-icon>
+        </button:>
+
     </header>
+
     <main>
         <section class="section--hero">
 
@@ -544,6 +556,15 @@
             <div class="Copyright">Copyright &COPY; 2018 by omnifood, All rights is reserved. </div>
         </div>
     </footer>
+
+    <!-- <script>
+    const navButton = document.querySelector('.mobile--nav');
+    const header = document.querySelector('.header');
+
+    navButton.addEventListener('click', function () {
+        header.classList.toggle('nav--open');
+    });
+</script> -->
 
 </body>
 

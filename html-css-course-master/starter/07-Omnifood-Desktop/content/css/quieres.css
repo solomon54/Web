@@ -75,12 +75,88 @@ insted; 1 rem = 1 em = 16 px  */
     html {
         font-size: 56.25%;
         /* 1rem = 9px */
+
+    }
+
+    .header {
+        height: 4.8rem;
+        padding: 3.2rem 2.4rem;
+    }
+
+
+
+    /* MOBILE NAVIGATION */
+    .mobile--nav {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+
+    }
+
+    .nav--list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        /* padding: 9.6rem; */
+        margin-top: 8.4rem;
+
+
     }
 
     .main--nav {
-        font-size: 1.6rem;
+        background-color: #ffffffee;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 70%;
+        height: 45vh;
+        width: 30%;
+        font-size: 1.8rem;
+        border-radius: 1.2rem;
+
+        transition: all 0.5s ease;
+        transform: translateX(100%);
+
+
+        /* HIDE NAVIGATION */
+        /* 1) set display none */
+        /* display: none; */
+
+        /* 2) set opacity to 0 */
+        opacity: 0;
+
+        /* 3) set pointer event none */
+        pointer-events: none;
+
+
+        /* 4) set screen visiblity hidden */
+        visibility: hidden;
+
 
     }
+
+    .nav--open .main--nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav--open .mobile--nav ion-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .nav--open .mobile--nav ion-icon[name="menu-outline"] {
+        display: none;
+    }
+
+
+
+
+    /* HERO SECTION */
 
     .section--hero {
         background-color: yellow;
@@ -90,6 +166,7 @@ insted; 1 rem = 1 em = 16 px  */
     .hero {
         gap: 4.8rem;
     }
+
 
     .heading--primary {
         font-size: 2.4rem;
@@ -224,3 +301,9 @@ insted; 1 rem = 1 em = 16 px  */
 
     }
 }
+
+
+
+/* 
+###################################################################   for the screen size of < =750px     ##########   ######################################################### .
+*/

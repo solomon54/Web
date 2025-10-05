@@ -50,15 +50,18 @@ body {
     color: #555;
     line-height: 1;
     /* height: 100vh  ; */
+    overflow-x: hidden;
 
 
 }
 
 /* HEADER SECTION */
 .header {
+    position: relative;
     height: 4.8rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #FAE5D3;
     padding: 3.2rem 2.4rem 6.4rem 2.4rem;
 }
@@ -104,6 +107,28 @@ body {
 
 }
 
+/* MOBILE NAVIGATION */
+
+.mobile--nav {
+    font-size: 4.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* both of them can possible to use */
+/* .mob--nav-close {
+    display: none;
+
+} */
+
+.mobile--nav ion-icon[name="close-outline"] {
+    display: none;
+}
+
+.mobile--nav ion-icon[name="menu-outline"] {
+    display: none;
+}
 
 /* 
 ########################################################
