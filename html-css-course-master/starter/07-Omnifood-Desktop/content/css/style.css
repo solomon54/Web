@@ -142,7 +142,21 @@ body {
     margin: 0 auto;
 }
 
+/* Section sticy */
+.stiky {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
 
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1.2rem 1.2rem #738efc1a;
+
+    z-index: 10;
+
+}
 
 .hero--img {
     width: 100%;

@@ -49,3 +49,29 @@ allLinks.forEach(function (link){
     });
     
 });
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////// Make a navigation menu stiky      //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+const sectionheroEl=document.querySelector('.section--hero');
+
+const obs=new IntersectionObserver(function (entries){
+    const ent=entries[0];
+    if(!ent.isIntersecting){
+    headerEl.classList.add('stiky');
+    } 
+    if(ent.isIntersecting){
+        headerEl.classList.remove('stiky');
+    }
+    
+},
+{
+        // In the view port
+
+    root:null,
+    threshold:0,
+    rootMargin:'-90px'
+});
+obs.observe(sectionheroEl);
