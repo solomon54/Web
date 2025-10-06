@@ -578,6 +578,11 @@ insted; 1 rem = 1 em = 16 px  */
         flex-direction: column;
     }
 
+    .tag--2 {
+        width: auto;
+        margin-left: auto;
+    }
+
     .btn,
     .meal--item-box,
     .meal--box {
@@ -601,6 +606,10 @@ insted; 1 rem = 1 em = 16 px  */
     .complet--box::after {
         font-size: 1.2rem;
         padding: 0.5rem 2.3rem;
+    }
+
+    .starter--box {
+        margin: auto;
     }
 
     .feature--icon {
