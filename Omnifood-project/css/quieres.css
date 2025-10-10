@@ -49,7 +49,7 @@ insted; 1 rem = 1 em = 16 px  */
 
 
     .contact address {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .footer--nav ul {
@@ -484,10 +484,13 @@ insted; 1 rem = 1 em = 16 px  */
 ##################################################
 ################ for screen size of 52opx or less ########## ############################################### */
 @media(max-width:33em) {
+    html {
+        font-size: 45%;
+    }
 
     /* size of < = 520px */
     .heading--primary {
-        font-size: 2.4rem;
+        font-size: 3.5rem;
     }
 
     .hero--description {
@@ -504,7 +507,7 @@ insted; 1 rem = 1 em = 16 px  */
 
     .logos {
         gap: 0.5rem;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .logos img {
@@ -516,7 +519,7 @@ insted; 1 rem = 1 em = 16 px  */
     .pricing--name,
     .meals--tittle,
     .heading--secondary {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 
 
@@ -555,12 +558,12 @@ insted; 1 rem = 1 em = 16 px  */
     .item--heading,
     .meal--tittle,
     .heading--tertiary {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .ingridents,
     .step--description {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.8;
     }
 
@@ -586,7 +589,7 @@ insted; 1 rem = 1 em = 16 px  */
     .btn,
     .meal--item-box,
     .meal--box {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         padding: 1.2rem;
     }
 
@@ -604,7 +607,7 @@ insted; 1 rem = 1 em = 16 px  */
     }
 
     .complet--box::after {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         padding: 0.5rem 2.3rem;
     }
 
@@ -623,14 +626,18 @@ insted; 1 rem = 1 em = 16 px  */
         margin: 0;
     }
 
+    .sign--in {
+        margin: auto;
+    }
+
     .deiscription {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         margin: 1.2rem auto;
     }
 
     .form--box label,
     .form input,
     .form select {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 }

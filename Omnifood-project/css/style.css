@@ -43,6 +43,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-X: hidden;
 }
 
 body {
@@ -51,12 +52,12 @@ body {
     color: #555;
     line-height: 1;
     /* height: 100vh  ; */
-    overflow-x: hidden;
-
+    overflow-X: hidden;
 }
 
 /* HEADER SECTION */
 .header {
+    width: 100%;
     position: relative;
     height: 4.8rem;
     display: flex;
